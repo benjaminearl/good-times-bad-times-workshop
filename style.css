@@ -43,10 +43,16 @@ a {
   background-color: #f00;
   color: #fff;
 }
-.columns {
+.columns-11 {
   display: grid;
   grid-template-columns: 1fr 1fr;
 }
+
+.columns-planning {
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+}
+
 /* ---------------------------- MOBILE ---------------------------- */
 
 @media only screen and (max-width:800px) {
@@ -75,3 +81,11 @@ a {
       height: auto;
       overflow: auto;
   }
+}
+@media only screen and (max-width:550px) {
+  .columns-planning {
+    font-size: 15px;
+    display: grid;
+    grid-template-columns: 2fr 5fr;
+  }
+}
