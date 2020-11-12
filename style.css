@@ -43,12 +43,12 @@ a {
   background-color: #f00;
   color: #fff;
 }
-.columns-11 {
+.students {
   display: grid;
   grid-template-columns: 1fr 1fr;
 }
 
-.columns-planning {
+.planning {
   display: grid;
   grid-template-columns: 1fr 4fr;
 }
@@ -83,7 +83,7 @@ a {
   }
 }
 @media only screen and (max-width:550px) {
-  .columns-planning {
+  .planning {
     font-size: 15px;
     display: grid;
     grid-template-columns: 2fr 5fr;
