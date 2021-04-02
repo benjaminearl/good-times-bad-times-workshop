@@ -1,0 +1,117 @@
+body {
+  margin: 0;
+    font-family: 'Times New Roman', serif;
+    font-weight: normal;
+    font-size: 20px;
+    color: #f00;
+    background-color: #fff;
+}
+
+a {
+  color: #f00;
+  text-decoration: none;
+  border-bottom: 1px solid #f00;
+}
+
+hr {
+  border-top: 1px dashed #f00;
+  border-bottom: 0px;
+}
+
+#main {
+
+    margin: 0px;
+    padding: 15px;
+}
+
+.box {
+  margin: 0;
+  padding: 5px;
+
+}
+
+.collapsible {
+  display: inline-block;
+  border: 1px solid #f00;
+  height: 120px;
+  width: 100%;
+  border-radius: 50%;
+  line-height: 115px;
+  font-size: 30px;
+  text-align: center;
+  cursor: pointer;
+  background-color: #fff;
+  color: #f00;
+  font-family: inherit;
+  outline: none;
+}
+
+.collapsible:hover {
+  background-color: #f00;
+  color: #fff;
+}
+
+.content{
+  padding: 0;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  display: none;
+  overflow: hidden;
+  width: 50%;
+  margin-left: 25%;
+}
+
+.page-title {
+  display: inline-block;
+  border: 1px solid #f00;
+  height: 120px;
+  width: 100%;
+  border-radius: 50%;
+  line-height: 115px;
+  font-size: 30px;
+  text-align: center;
+}
+.students {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.planning {
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+}
+
+figure {
+    margin: 0;
+}
+
+
+/* ---------------------------- MOBILE ---------------------------- */
+
+@media only screen and (max-width:1200px) {
+
+  #content, html, body {
+      font-size: 18px;
+  }
+
+  small {
+    font-size: 14px;
+  }
+
+  .button {
+    font-size:
+  }
+
+  .content {
+    width: 100%;
+    margin-left: 0;
+  }
+
+}
+@media only screen and (max-width:550px) {
+  .planning {
+    font-size: 15px;
+    display: grid;
+    grid-template-columns: 2fr 5fr;
+  }
+}
