@@ -1,0 +1,117 @@
+html, body {
+    height: 100%;
+    margin: 0px;
+    font-family: 'Times New Roman', serif;
+    font-weight: normal;
+    font-size: 20px;
+    color: #f00;
+    background-color: #fff;
+}
+
+a {
+  color: #f00;
+  text-decoration: none;
+  border-bottom: 1px solid #f00;
+}
+
+small {
+  font-size: 12px;
+}
+
+hr {
+  border-top: 1px dashed #f00;
+  border-bottom: 0px;
+}
+
+header {
+  padding: 20px;
+}
+
+#content {
+  margin: 0;
+  padding: 20px;
+  padding-top: 5px;
+  overflow: scroll;
+  max-width: 720px;
+}
+#home-content {
+  margin: 0;
+  padding: 10px;
+  padding-top: 5px;
+  overflow: scroll;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.home-images {
+padding: 10px;
+}
+
+footer {
+  position: sticky;
+  top: calc(100vh - 50px);
+  padding: 20px;
+  text-align:right;
+  background-color: #fff;
+}
+
+.button {
+  border: 1px solid #f00;
+  border-radius: 5px;
+  padding: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  cursor: pointer;
+  display: inline-block;
+}
+.button:hover {
+  background-color: #f00;
+  color: #fff;
+}
+
+.students {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.time {
+  display: inline-block;
+  width: 100px;
+}
+.event {
+  display: inline-block;
+}
+
+
+figure {
+    margin: 0;
+}
+img {
+  width: 100%;
+}
+
+
+/* ---------------------------- MOBILE ---------------------------- */
+
+@media only screen and (max-width:720px) {
+
+  html, body {
+      font-size: 18px;
+  }
+
+  small {
+    font-size: 14px;
+  }
+
+  #home-content {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+}
+@media only screen and (max-width:550px) {
+  .planning {
+    font-size: 15px;
+  }
+}
